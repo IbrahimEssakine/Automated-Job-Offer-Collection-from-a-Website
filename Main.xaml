@@ -1,0 +1,288 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,2547.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Azure.Models</x:String>
+      <x:String>UiPath.ConnectionClient</x:String>
+      <x:String>UiPath.ConnectionClient.Contracts</x:String>
+      <x:String>UiPath.Azure.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Azure</AssemblyReference>
+      <AssemblyReference>ConnectionClient</AssemblyReference>
+      <AssemblyReference>UiPath.Azure.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="798.4,2482.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="\Project\Output" Name="ProjectPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="SOFRECOM_SCRAPPING" sap:VirtualizedContainerService.HintSize="736,2370.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8e82029b-a17e-4f01-b904-cd68c9b9d987" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="702.4,2153.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Default="[{&quot;Afrique&quot;,&quot;Europe&quot;}]" Name="Continent" />
+              <Variable x:TypeArguments="s:String[]" Default="[{&quot;Développement&quot;, &quot;Design, Innovation, R&amp;D&quot;, &quot;Marketing&quot;, &quot;Finance&quot;, &quot;Système d’information, IT&quot;, &quot;Réseaux&quot;, &quot;Fonctions transverses&quot;, &quot;Consulting, project management&quot;, &quot;Système d’information, IT, Innovation, R&amp;D&quot;, &quot;Marketing, design&quot;, &quot;Communication&quot;, &quot;Système d’information, IT, Architecture&quot;, &quot;Architecture&quot;, &quot;Top management (archivé)&quot;, &quot;Système d’information, IT, Sécurité, Réseaux&quot;, &quot;Entreprises (BtoB), Grand public (BtoC)&quot;, &quot;Système d’information, IT, Développement&quot;, &quot;Système d’information, IT, Exploitation, Réseaux&quot;, &quot;Intégration, validation&quot;}]" Name="Categories" />
+              <Variable x:TypeArguments="s:String[]" Default="[{&quot;CDI&quot;,&quot;Stage&quot;}]" Name="Type" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Carrières'" sap:VirtualizedContainerService.HintSize="640,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e82029b-a17e-4f01-b904-cd68c9b9d987" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/" DesignTimeRectangle="1363, 215, 142, 54" DesignTimeScaleFactor="1.25" FriendlyName="'Carrières'" FullSelectorArgument="&lt;webctrl aaname='Carrières' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Carrières' tag='SPAN' type='' class='font-weight-normal nav-main__nav-link cursor-pointer level1' check:innerText='Carrières' /&gt;" Guid="b52d2348-d56c-4787-9276-9e8af7745649" ImageBase64="" InformativeScreenshot="f25d72106cbb689bf704bdfabe5415c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cabinet de conseil et d’ingénierie - Télécommunications - Sofrecom' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Element 'Carrières'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/" DesignTimeRectangle="1363, 215, 142, 54" DesignTimeScaleFactor="1.25" FriendlyName="'Carrières'" FullSelectorArgument="&lt;webctrl aaname='Carrières' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Carrières' tag='SPAN' type='' class='font-weight-normal nav-main__nav-link cursor-pointer level1' check:innerText='Carrières' /&gt;" Guid="9d164ab2-e58b-47b6-a6a8-146ba37aa63f" InformativeScreenshot="54efd8a9f076e45578f7b08b59a04182.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cabinet de conseil et d’ingénierie - Télécommunications - Sofrecom' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nos offres d'emploi'" sap:VirtualizedContainerService.HintSize="640,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e82029b-a17e-4f01-b904-cd68c9b9d987" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/" DesignTimeRectangle="1296, 269, 275, 0" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Nos offres d'emploi'" FullSelectorArgument="&lt;webctrl aaname='Nos offres d&amp;apos;emploi' parentid='js-padding' tag='A' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='Nos offres d&amp;apos;emploi' parentid='js-padding' tag='A' type='' class='nav-main__nav-link level2' check:text='Nos offres d&amp;apos;emploi' /&gt;" Guid="8ced3d03-16e5-4d02-8bf0-78008dfb6f72" ImageBase64="" InformativeScreenshot="2d39cf0b9b98fc60a97d13881ae459f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cabinet de conseil et d’ingénierie - Télécommunications - Sofrecom' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="640,1607.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Continent]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="continent" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="606.4,1419.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NSelectItem DisplayName="Select Item 'Continent'" sap:VirtualizedContainerService.HintSize="563.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[continent.ToString]" ScopeIdentifier="8e82029b-a17e-4f01-b904-cd68c9b9d987" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                          <x:String>Continent</x:String>
+                          <x:String>Afrique</x:String>
+                          <x:String>Europe</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/carrieres/nos-offres-demploi.html" CvTextArea="47, 406, 95, 20" CvTextArgument="Continent" CvType="Text" DesignTimeRectangle="29, 449, 783, 48" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Continent'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='w-100 mb-0 bg-transparent border-gray900' aaname='' /&gt;" Guid="5a438dd3-0e68-455e-afe4-9339ee0d0fe7" ImageBase64="" InformativeScreenshot="1d42b2ef6ee7ad3dad77967a4c4f54de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nos offres d&amp;apos;emploi - Sofrecom' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="563.2,1132" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Categories]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="categories" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="529.6,944" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NSelectItem DisplayName="Select Item 'Catégories'" sap:VirtualizedContainerService.HintSize="486.4,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[categories.ToString]" ScopeIdentifier="8e82029b-a17e-4f01-b904-cd68c9b9d987" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="21">
+                                  <x:String>Catégories</x:String>
+                                  <x:String>Développement</x:String>
+                                  <x:String>Design, Innovation, R&amp;D</x:String>
+                                  <x:String>Marketing</x:String>
+                                  <x:String>Finance</x:String>
+                                  <x:String>Système d’information, IT</x:String>
+                                  <x:String>Réseaux</x:String>
+                                  <x:String>Fonctions transverses</x:String>
+                                  <x:String>Consulting, project management</x:String>
+                                  <x:String>Système d’information, IT, Innovation, R&amp;D</x:String>
+                                  <x:String>Marketing, design</x:String>
+                                  <x:String>Communication</x:String>
+                                  <x:String>Système d’information, IT, Architecture</x:String>
+                                  <x:String>Architecture</x:String>
+                                  <x:String>Top management (archivé)</x:String>
+                                  <x:String>Système d’information, IT, Sécurité, Réseaux</x:String>
+                                  <x:String>Entreprises (BtoB), Grand public (BtoC)</x:String>
+                                  <x:String>Système d’information, IT, Développement</x:String>
+                                  <x:String>Système d’information, IT, Exploitation, Réseaux</x:String>
+                                  <x:String>Intégration, validation</x:String>
+                                  <x:String>Conception, Développement</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/carrieres/nos-offres-demploi.html" CvTextArea="644, 705, 100, 23" CvTextArgument="Categories" CvType="Text" DesignTimeRectangle="626, 748, 347, 48" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Catégories'" FullSelectorArgument="&lt;webctrl name='&amp;amp;orangejobscategory' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='&amp;amp;orangejobscategory' tag='SELECT' type='' class='w-100 mb-0 bg-transparent border-gray900' aaname='' /&gt;" Guid="07dafba6-b2af-4871-9d92-14dd7811d7bd" ImageBase64="" InformativeScreenshot="174ed0beb1d80e1f5ed4d0d2fc8b1e77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nos offres d&amp;apos;emploi - Sofrecom' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,656.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <TryCatch.Try>
+                                <Sequence sap:VirtualizedContainerService.HintSize="449.6,425.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Adress'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h5' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h5' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="8e82029b-a17e-4f01-b904-cd68c9b9d987" Timeout="2" Version="V3">
+                                    <uix:NExtractData.NextLink>
+                                      <uix:TargetAnchorable Accuracy="0.77" BrowserURL="https://www.sofrecom.com/carrieres/nos-offres-demploi.html" CvElementArea="1593, 626, 48, 46" CvType="Button" DesignTimeRectangle="1596, 801, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' type='button' class='btn-unstyled next js-next slick-arrow' innertext=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' isleaf='0' parentclass='d-flex justify-content-end pr-4' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' tag='BUTTON' type='button' class='btn-unstyled next js-next slick-arrow' innertext=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' isleaf='0' parentclass='d-flex justify-content-end pr-4' /&gt;" Guid="549ee95f-9269-4229-8cfc-44573247fd3b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADfSURBVGhD7dQxCsJAFIThvYMXsheP4BHsLay9imfQxtbGw1gI6VZGSOVqknV848oUPwRClu8t5KXrrcut9h/4lFIzFfH98y9nvCrjVRmvynhVxqsyXpXxY1ptd3l/OBXf1RaCP54veTZfPmIOEHbzQLMHCMMj9gCheMQcIByPWANQ8fgxx8YYgIrvMTVhoNKZ76LiscsX682kAMd3pfOGouKnBPAncCTBM+AoHM+Co1A8E47C8Gw4CsFjDbLhKOzma/b4UGH4b2S8KuNVGa/KeFXGq3qJb6UnfIs1jO/yHVT172VBdxNFAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nos offres d&amp;apos;emploi - Sofrecom' /&gt;" SearchSteps="Selector, Image" Version="V2" Visibility="Visible" />
+                                    </uix:NExtractData.NextLink>
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.sofrecom.com/carrieres/nos-offres-demploi.html" DesignTimeRectangle="240, -242, 12938, 800" DesignTimeScaleFactor="1.25" FriendlyName="'Ingénieur DevOps'" FullSelectorArgument="&lt;webctrl class='slick-track' tag='DIV' /&gt;" Guid="84fc7a30-49f9-449d-8876-a94904a05fc4" InformativeScreenshot="8f44a5ab62a80d4e61465f5e6c00b3fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nos offres d&amp;apos;emploi - Sofrecom' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[categories.ToString]" WorkbookPath="[ProjectPath+continent.ToString+&quot;.xlsx&quot;]" />
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:Continue sap:VirtualizedContainerService.HintSize="334.4,24.8" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1060" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="488061f0f846069072084cd7694571b5.jpg" Selector="&lt;html app='chrome.exe' url='https://www.sofrecom.com/' /&gt;" Title="(2155) UiPath Beginners Course 2023 - How to Get Started - YouTube" Url="https://www.sofrecom.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
